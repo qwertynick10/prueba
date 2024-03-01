@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Configuración de caracteres y viewport para un mejor rendimiento en dispositivos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página web -->
+    <title>Second Chance</title>
+    <!-- Enlace a tu archivo CSS externo para estilos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Sección del encabezado -->
+    <header id="header">
+        <!-- Contenedor para el contenido del encabezado -->
+        <div>
+            <!-- Barra de navegación -->
+            <nav id="top-nav">
+                <!-- Logo con enlace a la página de inicio -->
+                <a href="index.html"><img src="img/logo_desktop.39966793.jpg" alt=""></a>
+                <!-- Enlaces de navegación -->
+                <ul>
+                    <!-- Enlace de navegación a la página de inicio -->
+                    <a href="index.html">
+                        <li>INICIO</li>
+                    </a>
+                    <!-- Enlace de navegación a la sección de Animales -->
+                    <a href="Animals.html">
+                        <li>ADOPTAR</li>
+                    </a>
+                    <!-- Enlace de navegación a la sección de Tienda Solidaria -->
+                    <a href="#">
+                        <li>TIENDA SOLIDARIA</li>
+                    </a>
+
+                </ul>
+            </nav>
+            <!-- Botón de inicio de sesión -->
+            <div>
+                <!-- Enlace a la página de inicio de sesión con un botón de inicio de sesión -->
+                <a href="login.html">
+                    <button id="login-button">
+                        <!-- Icono para el botón de inicio de sesión -->
+                        <i class="fa-solid fa-user-plus"></i>
+                        Entrar
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!----------------------------------------------------->
+    <p class="clear"></p>
+    <main id="main">
+        <!-- Formulario de Registro -->
+        <form class="formulario">
+            <fieldset>
+                <!-- Título del formulario -->
+                <legend>Registrate</legend>
+                <!-- Campos del formulario -->
+                <label>Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" autofocus required
+                    maxlength="20"></br></br>
+                <label>Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Introduce tu apellido" autofocus required
+                    maxlength="20"></br></br>
+                <label>Email:</label>
+                <input type="email" id="correo" name="correo" required><br /></br>
+                <label>Usuario:</label>
+                <input type="text" name="nombre" placeholder="Su nombre de usuario" required pattern="[A-Za-z0-9]{5,40}"
+                    title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 40" /><br /></br>
+                <label>Password:</label>
+                <input type="password" id="pass" name="pass" placeholder="Contraseña" minlength="11"
+                    required /><br /></br>
+                <!-- Botón de Registro -->
+                <input type="submit" value="Registrate"><br /></br>
+                <!-- Enlace para iniciar sesión si ya eres miembro -->
+                <div class="registrarse">
+                    ¿Ya eres miembro? <a href="login.html"> Inicia tu sesión</a>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <!-- Pie de página con el año y el mensaje de derechos reservados -->
+    <footer id="footer">
+        &copy; Todos los derechos reservados a Bryan Adams Rios 2024
+    </footer>
+
+
+</body>
+
+</html>

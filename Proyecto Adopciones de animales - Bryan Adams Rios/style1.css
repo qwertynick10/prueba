@@ -1,0 +1,239 @@
+ /*** Estilos para el Contenedor Principal ***/
+  /* Ancho del contenedor principal y centrado */
+  #main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos para el encabezado h2 dentro del contenedor principal */
+#main h2 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+/* Estilos para el encabezado h3 dentro del contenedor principal */
+#main h3 {
+    font-size: 2rem;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------- */
+/* Limpia elementos flotantes a ambos lados en un contenedor padre. */
+.clear {
+    clear: both;
+}
+
+/*** Sección del hero ***/
+
+#hero {
+    background-image: url("img/hero-image.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-position: 10px 550px;
+}
+
+/* Contenedor del texto del hero */
+#hero>div {
+
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    text-align: center;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Imagen del hero posicionada a la derecha */
+#hero-img {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+    top: -50px;
+}
+
+/* cite en bloque con color verde */
+#hero cite {
+    display: block;
+    color: var(--main-green);
+}
+
+/* Estilo para el título del héroe */
+#hero h1 {
+    margin-top: 150px;
+    border-bottom: 4px solid white;
+}
+
+/*** Sección de Animales y Colaborar ***/
+#animals-section,
+#colaborate-section {
+    text-align: center;
+}
+
+/* Diseño de secciones como fila flexible */
+#animals-section>section,
+#colaborate-section>section {
+    display: flex;
+}
+
+/* Diseño de artículos en sección */
+#animals-section>section article,
+#colaborate-section>section article {
+    width: 33%;
+    margin: 10px;
+}
+
+/* Imágenes de animales al 100% con margen derecho */
+#animals-section>section article img {
+    width: 100%;
+    margin-right: 120px;
+}
+
+/* Sombra y transición en artículo al pasar el mouse */
+#animals-section>section article {
+    box-shadow: 0px 1px 3px gray;
+    transition: all ease 0.25s;
+}
+
+/* Efecto de escala y sombra al pasar el mouse */
+#animals-section>section article:hover {
+    transform: scale(0.98);
+    box-shadow: 0px 2px 4px gray;
+}
+
+/* Estilos para el nombre del animal */
+#animals-section>section article .name {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: rgb(51, 47, 47);
+}
+
+/* Estilos para la descripción del animal */
+#animals-section>section article .desc {
+    margin-top: 0;
+    padding-top: 0;
+    color: gray;
+}
+
+/* Estilos para el enlace dentro del artículo de animales */
+#animals-section>section article a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Estilos para el botón en la sección de animales */
+#animals-section button {
+    margin-top: 25px;
+    padding: 10px 30px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    background-color: #79D671;
+    border: none;
+    cursor: pointer;
+}
+
+/* Icono en la sección de colaboración */
+#colaborate-section i {
+    font-size: 2.5rem;
+    background-color: var(--main-green);
+    padding: 20px;
+    border-radius: 100%;
+    color: white;
+}
+
+/* Estilos para los artículos en la sección de colaboración */
+#colaborate-section>section article {
+    margin-top: 50px;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 25px;
+    box-shadow: 0px 3px 3px gray;
+}
+
+/* Estilos para pantallas más pequeñas (máx. 800px) */
+/* Ajustar el diseño de secciones para envolver y centrar */
+@media (max-width: 800px) {
+
+    #colaborate-section>section,
+    #animals-section>section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Redefinir el ancho de los artículos en secciones de Animales y Colaborar */
+    #animals-section>section article,
+    #colaborate-section>section article {
+        width: 50%;
+
+    }
+
+    /* Ajustar el tamaño del título del héroe */
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Mover el título hacia arriba y agregar borde inferior */
+    #hero h1 {
+        margin-top: 250px;
+        border-bottom: 4px solid white;
+    }
+}
+
+/*** Sección de "¿Por qué adoptar?" ***/
+/* Estilos para el título de la sección "¿Por qué adoptar?" */
+#why-section h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Estilos para el subtítulo de la sección "¿Por qué adoptar?" */
+#why-section h3 {
+    margin-top: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* Diseño de artículos en la sección "¿Por qué adoptar?" */
+#why-section>section article {
+    display: flex;
+}
+
+/* Estilos para la parte de texto en los artículos */
+#why-section>section article div {
+    width: 50%;
+}
+
+/* Imágenes en los artículos al 100% de ancho */
+#why-section>section article div img {
+    width: 100%;
+}
+
+/* Estilos para pantallas más pequeñas (máx. 1200px) */
+/* Cambiar la dirección de la fila a columna y centrar elementos */
+@media (max-width: 1200px) {
+    #why-section>section article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Establecer el ancho completo para el contenido de texto en los artículos */
+    #why-section>section article div {
+        width: 100%;
+    }
+
+    /* Reorganizar elementos en la segunda fila en pantallas más pequeñas */
+    #why-section>section article:nth-child(2) div:nth-child(1) {
+        order: 2;
+    }
+}
+
+/* Espaciado derecho para el primer div dentro de un artículo en "¿Por qué adoptar?" */
+#why-section>section article div:first-child {
+    padding-right: 20px;
+}

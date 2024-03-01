@@ -1,0 +1,72 @@
+#main {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 80vh;
+    background: #79D671;
+}
+/* Estilo del formulario */
+.formulario {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+}
+/* Estilo del título del formulario */
+.formulario legend {
+    text-align: center;
+    padding-left:  10px;
+    padding-right: 10px;
+    border-bottom: 2px solid green;
+    color: green;
+    font-weight: bold;
+    font-size: 25px;
+}
+/* Estilo del enlace "Registrarse" dentro del formulario */
+.registrarse a{
+    margin: -5px 0 20px 5px;
+    color: blue;
+    cursor: pointer;
+}
+/* Efecto hover para el enlace "Registrarse" */
+.registrarse a:hover{
+    text-decoration: underline;
+
+}
+/* Estilo del botón de envío */
+input[type="submit"]{
+    width: 40%;
+    height: 50px;
+    border: 1px solid;
+    background: rgb(73, 167, 73);
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+/* Efecto hover para el botón de envío */
+input[type="submit"]:hover{
+    border-color: goldenrod;
+    transition: .5s;
+}
+/* Estilo del mensaje de registro */
+.registrarse{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;}
+.registrarse a{
+    color: blue;
+    text-decoration: none;
+}
+/* Efecto hover para el enlace "Registrarse" fuera del formulario */
+.registrarse a:hover{
+    text-decoration: underline;
+}
+/* Estilo de limpieza */
+.clear{
+    clear: both;
+}
